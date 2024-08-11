@@ -10,3 +10,5 @@ console.log(points)
 
 
 // Constants
+const output = 32;
+console.log(output)
