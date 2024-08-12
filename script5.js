@@ -60,8 +60,8 @@ let numberType = 67;
 
 // String Method
 
-let stringTyoe = String(numberType)
-console.log(stringTyoe, typeof stringTyoe)
+let stringType = String(numberType)
+console.log(stringTyoe, typeof stringType)
 
 
 // =================================================================================
