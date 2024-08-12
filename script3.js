@@ -22,3 +22,21 @@ console.log(firstname[0])
 
 console.log(firstname.toUpperCase())
 console.log(fullName.toLowerCase())
+console.log(lastname.indexOf("d"))
+console.log(lastname.lastIndexOf("a"))
+
+// Common String method
+
+let Myname = ("  Mohd Aazim Sadan  ")
+
+// Trim Method
+
+let trim = Myname.trim()
+console.log(Myname)
+console.log(trim)
+
+console.log(trim.indexOf("Mohd"))
+
+// Includes Method
+
+console.log(trim.includes("sadan")) //Case Sensetive
