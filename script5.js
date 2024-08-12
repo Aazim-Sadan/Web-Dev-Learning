@@ -32,5 +32,6 @@ console.log(age == "24") // Focus only on value not on type
 
 // Strict Equality Operator
 
-console.log(age === "24")
+console.log(age === "24") // Focus on both value and type
+
 
