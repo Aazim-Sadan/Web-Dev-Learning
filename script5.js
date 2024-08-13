@@ -61,7 +61,7 @@ let numberType = 67;
 // String Method
 
 let stringType = String(numberType)
-console.log(stringTyoe, typeof stringType)
+console.log(stringType, typeof stringType)
 
 
 // =================================================================================
