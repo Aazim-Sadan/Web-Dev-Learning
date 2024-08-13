@@ -27,7 +27,8 @@ for(let i = 0; i<mobile.length; i++){
 // Try by myself
 
 let n = 5;
-for(let i = 1; i>10; i++){
-    console.log(n * 1)
+for(let i = 1; i<=10; ++i){
+    console.log(n*i)
 }
 
+// While Loop
