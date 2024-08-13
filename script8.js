@@ -20,3 +20,14 @@ for(let i = 0; i<mobile.length; i++){
 
 // iteration and value of i
 // 0 , 1
+
+
+// ==============
+
+// Try by myself
+
+let n = 5;
+for(let i = 1; i>10; i++){
+    console.log(n * 1)
+}
+
