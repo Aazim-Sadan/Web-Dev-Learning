@@ -1,8 +1,8 @@
-// Break and Cantinue statement
+// Break and Continue statement
 
 // Also called jump statement
 
-// Cantinue statement
+// Continue statement
 
 // used to skip some values of loop
 
