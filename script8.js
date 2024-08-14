@@ -32,3 +32,9 @@ for(let i = 1; i<=10; ++i){
 }
 
 // While Loop
+
+for(let i = 1; i<5; i++){
+    console.log("For Loop", i)
+}
+
+while()
