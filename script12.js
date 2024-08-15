@@ -53,7 +53,3 @@ switch(age1){
 // If there is no break statement then "next" case will be executed
 console.log(result);
 
-for (let index = 0; index < array.length; index++) {
-    const element = array[index];
-    
-}
