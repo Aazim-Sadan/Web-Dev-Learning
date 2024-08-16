@@ -46,7 +46,6 @@ let transformer = function(str,func){
 }
 
 console.log(transformer("HELLO", lowerCase));
-compliment("You are a good coder")("Aazim");
 
 // ========================================================
 
