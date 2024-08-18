@@ -46,6 +46,7 @@ console.log(elementById);
 
 
 
+
 // =================================================================
 
 
@@ -75,6 +76,8 @@ heading.innerHTML += "<h3>We are Coders</h3>"
 
 
 
+
+
 // ====================================================================
 
 // Getting and setting attributes of elements 
@@ -89,3 +92,13 @@ JavaScript.setAttribute('href', "https://developer.mozilla.org/en-US/docs/Web/Ja
 console.log(JavaScript.getAttribute('href'));
 
 
+
+
+// ======================================================================
+
+
+// Adding the Style 
+
+let headStyle = document.querySelector('h1')
+headStyle.style.color = "red"
+headStyle.style.backgroundColor = "yellow"
