@@ -24,6 +24,8 @@ console.log(resultedElement2);
 
 // ===============================================================
 
+
+
 // Other ways to get Html elements 
 
 let querySelectorElements = document.querySelectorAll('h2')
@@ -41,3 +43,35 @@ console.log(tagNameElements);
 
 let elementById = document.getElementById('dev')
 console.log(elementById);
+
+
+
+// =================================================================
+
+
+// Updating and changing content 
+
+
+// innerText
+// Ignore spaces
+// Retrieve and set content in Plain text
+
+let heading = document.querySelector('.heading')
+// console.log(heading.innerText);
+// heading.innerText += "<P>We are Coders</P>"  // Update
+// console.log(heading.innerHTML);
+
+
+
+
+
+
+
+// innerHTML
+// it does not ignore spaces 
+// Retrieve and set content in HTML format
+heading.innerHTML += "<h3>We are Coders</h3>"
+// console.log(heading.innerHTML);
+
+
+
