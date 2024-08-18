@@ -102,3 +102,26 @@ console.log(JavaScript.getAttribute('href'));
 let headStyle = document.querySelector('h1')
 headStyle.style.color = "red"
 headStyle.style.backgroundColor = "yellow"
+
+
+
+
+// =========================================================================
+
+// Add, remove and replace class of elements 
+
+let addClass = document.querySelector('h2')
+
+// Adding new class 
+
+addClass.classList.add('newClass')
+
+
+// Remove the class 
+
+addClass.classList.remove('newClass')
+
+
+// Replace the class 
+
+addClass.classList.replace("coding", "newClass")
