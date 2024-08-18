@@ -125,3 +125,36 @@ addClass.classList.remove('newClass')
 // Replace the class 
 
 addClass.classList.replace("coding", "newClass")
+
+
+
+
+// ==========================================================================
+
+// Parent, Children and Sibling elements
+
+let parentElement = document.querySelector('.heading')
+// All children of parent 
+console.log(parentElement.children)
+
+// we cannot run forEach method on HTMLCollection so 
+// First convert into array 
+
+console.log(Array.from(parentElement.children))
+
+Array.from(parentElement.children).forEach(function(element){
+    element.classList.add('coders')
+})
+
+
+// Child elements 
+
+let childElement = document.querySelector('h1')
+// Find the parents of specific child 
+console.log(childElement.parentElement);
+
+
+// Find next/previous sibling of the child 
+
+console.log(childElement.nextElementSibling);
+// console.log(childElement.previousElementSibling)
