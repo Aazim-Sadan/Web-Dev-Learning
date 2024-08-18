@@ -75,3 +75,17 @@ heading.innerHTML += "<h3>We are Coders</h3>"
 
 
 
+// ====================================================================
+
+// Getting and setting attributes of elements 
+
+let JavaScript = document.querySelector('a')
+console.log(JavaScript.getAttribute('href')); // get gunctions for read
+
+
+// set the Attribue 
+
+JavaScript.setAttribute('href', "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction")
+console.log(JavaScript.getAttribute('href'));
+
+
