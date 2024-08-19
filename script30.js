@@ -18,11 +18,18 @@
 let form = document.querySelector('.sign-up')
 let email = document.querySelector('#email')
 let password = document.querySelector('#password')
+let passwordPattern = "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,}$"
 
 
 form.addEventListener('submit', (e)=>{
     e.preventDefault();
-    let passwordValue = password.value
+    let passwordValue = password.value;
     console.log(passwordValue);
-    
+    let result = passwordValue.match(passwordPattern)
+    if(result){
+        console.log("Your Password is strong")
+    }else{
+        console.log("Try Again");
+        
+    }
 })
