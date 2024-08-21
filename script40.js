@@ -11,4 +11,10 @@ let result = scores.some(score => {
     return score > 90
 })
 
-console.log(result);
+console.log("some method", result);
+
+let newScores = [67,35,56,24,65]
+let newResult = newScores.every(score =>{
+    return score > 50
+})
+console.log("every method", newResult);
