@@ -19,3 +19,4 @@ let Car = function (color, model) {
 let instanceOfCar = new Car("Yellow", 2023)
 let instance = new Car("Black", 2021)
 console.log(instanceOfCar, instance);
+
