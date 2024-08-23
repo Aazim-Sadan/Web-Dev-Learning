@@ -1,6 +1,6 @@
 // Object Oriented Programming
 
-// Prototypical inheritance on building in on objects(array)
+// Pprototypal inheritance on building in on objects(array)
 
 
 
