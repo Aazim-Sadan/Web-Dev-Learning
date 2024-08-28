@@ -36,7 +36,7 @@ for (let [key, value] of map) {
 
 // ======================================================================
 
-// For-in loop
+//                        For-in loop
 
 
 let lang = {
@@ -62,4 +62,3 @@ for (const key in language) {
     console.log(language[key]);
 
 }
-
