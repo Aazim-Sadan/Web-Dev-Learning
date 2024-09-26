@@ -6,7 +6,7 @@
 // Importing module without value
 
 // import {order, laptopPrice, quant} from './Product.js'
-import * as singleVariable from './Product.js'
+import * as singleVariable from './Product'
 
 console.log("Importing Module");
 
