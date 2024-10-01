@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function hello() {
+            console.log("Hey Aazim");
+
+        }
+        hello()
+
+
+        // Object 
+        let Obj = {
+            a: 3,
+            b: 6,
+
+            func: function(){
+                console.log(`This is function is object ${this.a+4} `);
+                
+            }
+        }
+        Obj.func()
+
+
+
+        // Array + Map 
+        let rollno = [2324, 2322, 2344,]
+
+        let myRoll = rollno.map((roll) => {
+            return roll + 3;
+
+        })
+        console.log(myRoll[2]);
+
+
+        // Events 
+        document.addEventListener("click", function click(){
+            console.log("Clicked");
+            alert("Hello")
+            let conf = confirm("Are you sure")
+            console.log(conf);
+            
+            
+        })
+
+
+        // Callbacks
+        setTimeout(() => {
+            console.log("Yayyy");
+            
+        }, 3000); 
+        console.log("Main niche wali script hoon");
+        
+
+    </script>
+</head>
+
+<body style="color: white; background-color: black;">
+    <h1>
+        I am learning Js
+    </h1>
+</body>
+
+</html>
