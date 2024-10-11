@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexical Scoping and Closure</title>
+</head>
+
+<body style="background-color: #343434;">
+    <button id="green">Green</button>
+    <button id="orange">Orange</button>
+</body>
+
+<script>
+
+    // Lexical Scope 
+
+    function outer() {
+        let username = "Aazim";
+        console.log(password);    // Yeh line pehle hi execute hoti hai, par 'password' abhi define nahi hua, to error ayegi.
+
+        function inner() {
+            let password = "567";
+            console.log("inner", username);  // Yeh 'username' ko access kar sakta hai kyunki yeh outer scope mein declare hua hai
+        }
+
+        function innerTwo() {
+            console.log("innerMost", username);  // Yeh bhi 'username' ko access kar sakta hai, kyunki yeh outer scope mein hai
+            console.log(password);   // Yeh line error degi, kyunki 'password' sirf inner function ke andar accessible tha
+        }
+
+        inner();
+        innerTwo();
+
+    }
+
+    outer();
+    console.log("Too Outer", username);  // Yeh error dega, kyunki 'username' sirf 'outer' function ke scope mein accessible hai
+
+</script>
+<script>
+    
+    // document.getElementById("orange").onclick = function(){
+    //     document.body.style.backgroundColor = `orange`
+    // }
+    // document.getElementById("green").onclick = function(){
+    //     document.body.style.backgroundColor = `green`
+    // }
+
+
+
+    function clickHandler(color) {
+        // document.body.style.backgroundColor = `${color}`
+
+        return function () {
+            document.body.style.backgroundColor = `${color}`
+        }
+    }
+
+    document.getElementById('orange').onclick = clickHandler("orange")
+    document.getElementById('green').onclick = clickHandler("green")
+</script>
+
+</html>
