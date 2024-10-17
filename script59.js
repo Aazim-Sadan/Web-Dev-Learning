@@ -43,5 +43,4 @@ console.log(data, date2);
 }
 
 // We don't need chain anything as previously
-
 getTodo()
