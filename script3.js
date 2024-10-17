@@ -18,6 +18,7 @@ console.log(fullName)
 // Getting string character
 console.log(firstname[0])
 
+
 // String Methods
 
 console.log(firstname.toUpperCase())
