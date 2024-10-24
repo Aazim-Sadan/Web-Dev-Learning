@@ -1,0 +1,15 @@
+{
+  "name": "node-learning",
+  "version": "1.0.0",
+  "description": "a example of node",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aazim",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
