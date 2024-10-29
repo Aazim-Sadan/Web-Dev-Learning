@@ -1,0 +1,15 @@
+{
+  "name": "start-node",
+  "version": "1.0.0",
+  "description": "lerning NodeJs",
+  "scripts": {
+    "start": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AazimSadan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7"
+  }
+}
