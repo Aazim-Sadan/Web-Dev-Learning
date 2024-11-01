@@ -1,9 +1,11 @@
+require('dotenv').config({path:"../.env"});
 const express = require('express');
 const morgan = require('morgan');
 const server = express();
 const productRouter = require('./routes/product')
 const userRouter = require('./routes/user')
 
+console.log('env', process.env.DB_PASSWORD);
 
 
 //bodyParser
