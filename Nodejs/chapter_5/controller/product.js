@@ -28,7 +28,9 @@ exports.getAllProducts = async (req, res) => {
 
 exports.getProduct = async (req, res) => {
     const id = req.params.id;
-    const product = await Product.findById(id);
+    const _id = new mongoose.Types.ObjectId(id);
+    const product = await Product.findById(_id);
+   
     res.json(product);
 };
 
