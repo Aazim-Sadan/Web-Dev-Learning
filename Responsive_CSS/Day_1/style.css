@@ -1,0 +1,24 @@
+*{
+margin: 0;   
+padding: 0;
+}
+
+.parent{
+    background-color: brown;
+    width: 80%;
+  margin: 30px;
+  padding:50px;
+}
+
+.child{
+    width: 50%;
+}
+
+.heading{
+    color: white;
+    margin-bottom: 8px;
+}
+
+p{
+    color: white;
+}
