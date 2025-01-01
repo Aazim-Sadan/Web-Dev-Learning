@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    background: #23424A;
+    color: white;
+    width: ful;
+
+    padding: 60px 50px;
+}
+
+.intro-container{
+    width: 55%;
+}
+
+p{
+    padding: 15px 0;
+    font-size: 18px;
+    line-height: 1.5;
+    
+}
+
+button{
+    background:  #38CFD9;
+    padding:12px 25px;
+    border-radius: 31px;
+    border: none;
+    font-weight: bold;
+margin-top: 30px;
+}
+
+
+
