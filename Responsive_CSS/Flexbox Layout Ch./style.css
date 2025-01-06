@@ -36,6 +36,7 @@ section{
 
 .container{
     width: 85%;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -44,11 +45,18 @@ section{
     color: #F3EED9;
 }
 
+.section-title--dark{
+    color: #824936 ;
+}
+
 .intro{
     background: #F3EED9 ;
-    padding: 200px 0;
+    /* padding: 200px 0; */
     text-align: center;
     color: #824936;
+    min-height: 660px;
+    display: flex;
+    align-items: center;
 }
 
 .intro__text{
@@ -73,3 +81,21 @@ section{
     color: #fff;
 }
 
+@media (min-width: 800px) {
+    .row{
+        display: flex;
+    }
+
+    .col{
+        width: 100%;
+    }
+
+    .col + .col {
+        margin-left: 5em;
+    }
+
+    .intro__title{
+        font-size: 3.75rem;
+    }
+
+}
