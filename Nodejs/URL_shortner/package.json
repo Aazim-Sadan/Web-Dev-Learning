@@ -1,0 +1,18 @@
+{
+  "name": "url_shortner",
+  "version": "1.0.0",
+  "description": "a url shortner in nodejs",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "author": "aazim",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.5",
+    "nanoid": "^5.0.9"
+  }
+}
