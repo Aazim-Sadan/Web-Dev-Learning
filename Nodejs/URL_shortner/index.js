@@ -1,19 +1,24 @@
-import express from "express"
-import path from "path"
+import express from "express";
+import path from "path";
+import cookieParser from "cookie-parser";
 import { connectDB } from "./connect.js";
 import { URL } from "./models/url.js";
+import { checkForAuthentication, restrictTo } from "./middlewares/auth.js";
 import urlRoute from "./routes/url.js"
-import staticRoute from "./routes/staticRouter.js"
+import staticRoute from "./routes/staticRouter.js";
+import userRoute from "./routes/user.js";
 
-const app = express()
+const app = express();
 
 const PORT = 8000;
 
 app.set("view engine", "ejs");
-app.set("views", path.resolve("./views"))
+app.set("views", path.resolve("./views"));
 
 app.use(express.json());
-app.use(express.urlencoded({extended: false}));
+app.use(express.urlencoded({extended: true}));
+app.use(cookieParser());
+app.use(checkForAuthentication);
 
 app.use("/test", async (req, res) => {
     const allUrls = await URL.find({});
@@ -22,8 +27,9 @@ app.use("/test", async (req, res) => {
     })
 })
 
-app.use("/url", urlRoute);
-app.use("/", staticRoute)
+app.use("/url", restrictTo(['NORMAL', 'ADMIN']), urlRoute);
+app.use("/", staticRoute);
+app.use("/user", userRoute);
 app.get("/url/:shortId", async (req, res) => {
     try {
         const shortId = req.params.shortId;
